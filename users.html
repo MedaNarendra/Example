@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kafene website</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0px;
+        margin: 0px;
+      }
+      .navbar {
+        display: flex;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(249, 251, 252);
+        box-shadow: 0px 4px 7px rgb(164, 157, 157);
+      }
+      .logospace {
+        display: flex;
+        padding-left: 5%;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .lname {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        padding-left: 6%;
+      }
+      .navdiv ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 2rem;
+        padding-left: 6rem;
+      }
+      ul li a {
+        text-decoration: none;
+        font-size: 1.13rem;
+        font-weight: 600;
+        color: black;
+      }
+      ul li {
+        list-style: none;
+      }
+      #nav3 a {
+        color: rgb(27, 167, 120);
+        border-bottom: 2px solid rgb(27, 167, 120);
+      }
+      .logout {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 80px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <!--  creating navbar -->
+      <div class="logospace">
+        <!--  creating logo space -->
+        <div class="logo">
+          <!--  inserting logo -->
+          <img
+            src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+            alt="logo"
+          />
+        </div>
+        <div class="lname">
+          <p>Kafene</p>
+          <!--  inserting name-->
+        </div>
+      </div>
+      <div class="navdiv">
+        <ul>
+          <li class="navitems" id="nav1"><a href="/orders.html">Orders</a></li>
+          <li class="navitems" id="nav2">
+            <a href="/products.html">Products</a>
+          </li>
+          <li class="navitems" id="nav3"><a href="/users.html">Users</a></li>
+        </ul>
+      </div>
+      <div class="logout" onclick="logout()">
+        <p>Logout</p>
+      </div>
+    </div>
+    <script src="/users.js"></script>
+  </body>
+</html>
