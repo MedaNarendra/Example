@@ -17,6 +17,6 @@ fetch("https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/orders").then((data)=>
     document.getElementById("tbody").innerHTML=tableData;
 });
 function logout(){
-    window.location.assign("login.html");
+    window.location.assign("index.html");
 };
 
